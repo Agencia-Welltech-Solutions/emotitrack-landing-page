@@ -21,15 +21,6 @@
     <meta property="og:site_name" content="EmotiTrack">
     <meta property="og:locale" content="es_ES">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://emoti-track.netlify.app/">
-    <meta name="twitter:title" content="EmotiTrack - Encuentra tu equilibrio emocional">
-    <meta name="twitter:description" content="Tu guía personal para entender tus emociones y construir un bienestar duradero.">
-    <meta name="twitter:image" content="https://emoti-track.netlify.app/images/twitter-card.jpg">
-    <meta name="twitter:image:alt" content="EmotiTrack - App de bienestar emocional">
-    <meta name="twitter:creator" content="@emotitrack">
-    <meta name="twitter:site" content="@emotitrack">
-
     <link rel="icon" type="image/webp" sizes="32x32" href="./assets/images/logo.webp">
     <link rel="icon" type="image/webp" sizes="16x16" href="./assets/images/logo.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo.webp">
@@ -37,100 +28,194 @@
     <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<div class="gradient-bg"></div>
+
 <header>
     <nav class="container">
-        <div class="logo">
-            <img src="./assets/images/logo.webp" alt="">
+        <div class="logo" data-animate>
+            <img src="./assets/images/logo.webp" alt="Logo EmotiTrack">
             <div>
                 <strong>WellTech</strong><br>
                 <small>Solutions</small>
             </div>
         </div>
         <ul class="nav-links">
+            <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+            <li><a href="#como-funciona" class="nav-link">Cómo funciona</a></li>
+            <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="#" class="btn-download-header">
+            <span>Descargar App</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+        </a>
+
+        <button class="mobile-menu-toggle" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Cerrar menú">
+            <span></span>
+        </button>
+        <ul>
             <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="#" class="btn-download-header">Descargar App</a>
-    </nav>
+    </div>
 </header>
 
 <section class="hero container">
-    <div class="hero-content">
-        <h1>Encuentra tu equilibrio emocional con <strong>EmotiTrack</strong></h1>
+    <div class="hero-content" data-animate>
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Más de 10,000 usuarios activos</span>
+        </div>
+        <h1>Encuentra tu equilibrio emocional con <strong class="gradient-text">EmotiTrack</strong></h1>
         <p>Tu guía personal para entender tus emociones y construir un bienestar duradero. Empieza a registrar tu día y descubre el camino hacia una mente más clara y un corazón sereno.</p>
         <div class="hero-buttons">
-            <a href="#" class="btn-primary">Descargar en App Store</a>
-            <a href="#" class="btn-secondary">Disponible en Google Play</a>
+            <a href="#" class="btn-primary">
+                <span>Descargar en App Store</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                </svg>
+            </a>
+            <a href="#" class="btn-secondary">
+                <span>Disponible en Google Play</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <strong>4.8★</strong>
+                <span>Calificación</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong>10K+</strong>
+                <span>Descargas</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong>95%</strong>
+                <span>Satisfacción</span>
+            </div>
         </div>
     </div>
-    <div class="hero-image">
-        <div class="phone-mockup">
-            <img src="./assets/images/photos-app.webp" alt="">
+    <div class="hero-image" data-animate>
+        <div class="floating-card card-1">
+            <div class="card-icon">😊</div>
+            <span>Estado: Feliz</span>
         </div>
+        <div class="floating-card card-2">
+            <div class="card-icon">📈</div>
+            <span>Progreso: 85%</span>
+        </div>
+        <div class="floating-card card-3">
+            <div class="card-icon">🎯</div>
+            <span>Metas: 3/5</span>
+        </div>
+        <img src="./assets/images/photos-app.webp" alt="Imagenes de la aplicación de EmotiTrack" class="app-image">
     </div>
 </section>
 
 <section id="beneficios" class="benefits container">
-    <h2>Descubre los beneficios de EmotiTrack</h2>
-    <p class="benefits-subtitle">Descubre cómo EmotiTrack puede ayudarte a comprender y gestionar tus emociones, fomentando una vida más saludable y feliz.</p>
+    <div class="section-header" data-animate>
+        <span class="section-badge">Características</span>
+        <h2>Descubre los beneficios de <span class="gradient-text">EmotiTrack</span></h2>
+        <p class="benefits-subtitle">Descubre cómo EmotiTrack puede ayudarte a comprender y gestionar tus emociones, fomentando una vida más saludable y feliz.</p>
+    </div>
 
     <div class="benefits-grid">
-        <div class="benefit-card">
-            <div class="benefit-icon icon-heart">❤️</div>
+        <div class="benefit-card" data-animate>
+            <div class="benefit-icon-wrapper">
+                <div class="benefit-icon icon-heart">❤️</div>
+            </div>
             <h3>Monitorea tu estado de ánimo</h3>
             <p>Registra fácilmente tus estados de ánimo diarios y patrones de comportamiento de forma intuitiva.</p>
+            <div class="card-glow"></div>
         </div>
-        <div class="benefit-card">
-            <div class="benefit-icon icon-smile">😊</div>
+        <div class="benefit-card" data-animate>
+            <div class="benefit-icon-wrapper">
+                <div class="benefit-icon icon-smile">😊</div>
+            </div>
             <h3>Información personalizada</h3>
             <p>Recibe consejos y recursos personalizados según tus tendencias emocionales únicas.</p>
+            <div class="card-glow"></div>
         </div>
-        <div class="benefit-card">
-            <div class="benefit-icon icon-users">👥</div>
+        <div class="benefit-card" data-animate>
+            <div class="benefit-icon-wrapper">
+                <div class="benefit-icon icon-users">👥</div>
+            </div>
             <h3>Conecta con la comunidad</h3>
             <p>Únete a una comunidad de apoyo de usuarios que comparten tus experiencias.</p>
+            <div class="card-glow"></div>
         </div>
-        <div class="benefit-card">
-            <div class="benefit-icon icon-chart">📈</div>
+        <div class="benefit-card" data-animate>
+            <div class="benefit-icon-wrapper">
+                <div class="benefit-icon icon-chart">📈</div>
+            </div>
             <h3>Seguimiento del progreso</h3>
             <p>Monitorea tu progreso emocional y celebra tus logros con el tiempo.</p>
+            <div class="card-glow"></div>
         </div>
     </div>
 </section>
 
 <section id="como-funciona" class="how-it-works">
     <div class="container">
-        <h2>Cómo funciona</h2>
-        <p class="how-it-works-subtitle">Descubre mensajes inspiradores y consejos prácticos para cultivar el bienestar emocional y la resiliencia en tu día a día.</p>
+        <div class="section-header" data-animate>
+            <span class="section-badge">Guía de bienestar</span>
+            <h2>Cómo funciona</h2>
+            <p class="how-it-works-subtitle">Descubre mensajes inspiradores y consejos prácticos para cultivar el bienestar emocional y la resiliencia en tu día a día.</p>
+        </div>
 
         <div class="steps-grid">
-            <div class="step-card">
+            <div class="step-card" data-animate>
+                <div class="step-number">01</div>
                 <div class="step-icon">😊</div>
                 <h3>Agradece cada día</h3>
                 <p>Tómate un momento para reconocer las cosas buenas de tu vida.</p>
             </div>
-            <div class="step-card">
+            <div class="step-card" data-animate>
+                <div class="step-number">02</div>
                 <div class="step-icon">🌬️</div>
                 <h3>Respira profundamente</h3>
                 <p>Cuando te sientas abrumado, inhala y exhala lentamente.</p>
             </div>
-            <div class="step-card">
+            <div class="step-card" data-animate>
+                <div class="step-number">03</div>
                 <div class="step-icon">🏃</div>
                 <h3>Muévete un poco</h3>
                 <p>El ejercicio libera endorfinas, las hormonas de la felicidad.</p>
             </div>
-            <div class="step-card">
+            <div class="step-card" data-animate>
+                <div class="step-number">04</div>
                 <div class="step-icon">💙</div>
                 <h3>Sé amable contigo</h3>
                 <p>Trátate con la misma compasión que le darías a un amigo.</p>
             </div>
-            <div class="step-card">
+            <div class="step-card" data-animate>
+                <div class="step-number">05</div>
                 <div class="step-icon">🤝</div>
                 <h3>Conecta con otros</h3>
                 <p>Llama a un ser querido o pasa tiempo con un amigo.</p>
             </div>
-            <div class="step-card">
+            <div class="step-card" data-animate>
+                <div class="step-number">06</div>
                 <div class="step-icon">💡</div>
                 <h3>Enfócate en el presente</h3>
                 <p>Practica la atención plena y vive el momento.</p>
@@ -139,26 +224,204 @@
     </div>
 </section>
 
-<section id="contacto" class="contact container">
-    <h2>Ponte en Contacto</h2>
-    <p class="contact-subtitle">Nos encantaría saber de ti. Envíanos un mensaje.</p>
+<section id="testimonios" class="testimonials">
+    <div class="container">
+        <div class="section-header" data-animate>
+            <span class="section-badge">Lo que dicen nuestros usuarios</span>
+            <h2>Testimonios de nuestros usuarios</h2>
+            <p class="testimonials-subtitle">Descubre cómo EmotiTrack está ayudando a miles de personas a mejorar su bienestar emocional</p>
+        </div>
 
-    <form class="contact-form">
+        <div class="testimonials-grid">
+            <div class="testimonial-card" data-animate>
+                <div class="testimonial-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"Gracias a EmotiTrack encontré una oportunidad en mi propia región. Ahora tengo un mejor balance emocional sin tener que viajar. Me apoyaron en todo y hoy puedo tener la calma que necesitaba. ¡Ha cambiado mi vida por completo!"</p>
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23FFB84D'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='32' font-family='Arial, sans-serif' font-weight='bold'%3EAM%3C/text%3E%3C/svg%3E" alt="Ana Martínez">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-name">Ana Martínez</h3>
+                        <p class="testimonial-role">Estudiante</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-animate>
+                <div class="testimonial-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"Pensé que no conseguiría empleo por mi ansiedad en la ciudad. Con EmotiTrack encontré herramientas que me ayudaron cerca de casa, algo que también nació después que aprendí a gestionar mi estrés y descubrir mi paz interior."</p>
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23FF8A65'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='32' font-family='Arial, sans-serif' font-weight='bold'%3ECR%3C/text%3E%3C/svg%3E" alt="Carlos Rodríguez">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-name">Carlos Rodríguez</h3>
+                        <p class="testimonial-role">Profesional de TI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-animate>
+                <div class="testimonial-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="testimonial-text">"Increíble me sido clara para resolver periodos técnicos complicados en mi trabajo. EmotiTrack me proporcionó las herramientas de autoconocimiento y el espacio ideal para conectar con mis emociones. ¡Un cambio real!"</p>
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%2364B5F6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-size='32' font-family='Arial, sans-serif' font-weight='bold'%3ELF%3C/text%3E%3C/svg%3E" alt="Laura Fernández">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-name">Laura Fernández</h3>
+                        <p class="testimonial-role">Diseñadora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-cta" data-animate>
+            <button class="btn-more-testimonials">
+                <span>Ver más testimonios</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="contact container">
+    <div class="section-header" data-animate>
+        <span class="section-badge">Contáctanos</span>
+        <h2>Ponte en Contacto</h2>
+        <p class="contact-subtitle">Nos encantaría saber de ti. Envíanos un mensaje.</p>
+    </div>
+
+    <form class="contact-form" data-animate>
         <div class="form-group">
-            <input type="text" placeholder="Tu nombre" required>
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" placeholder="Tu nombre" required>
         </div>
         <div class="form-group">
-            <input type="email" placeholder="Tu correo electrónico" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="tu@correo.com" required>
         </div>
         <div class="form-group">
-            <textarea placeholder="Tu mensaje" required></textarea>
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
         </div>
-        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        <button type="submit" class="btn-submit">
+            <span>Enviar Mensaje</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+        </button>
     </form>
 </section>
 
 <footer>
-    <p>©2025 EmotiTrack. Cultivando tu bienestar emocional.</p>
+    <div class="footer-content container">
+        <div class="footer-grid">
+            <div class="footer-column footer-brand" data-animate>
+                <div class="footer-logo">
+                    <img src="./assets/images/logo.webp" alt="Logo de EmotiTrack">
+                    <div>
+                        <strong>EmotiTrack</strong><br>
+                        <small>WellTech Solutions</small>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    Tu compañero digital para el bienestar emocional. Registra, comprende y gestiona tus emociones de manera efectiva.
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column" data-animate>
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#como-funciona">Cómo funciona</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column" data-animate>
+                <h3 class="footer-title">Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column" data-animate>
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <a href="mailto:info@emotitrack.com">info@emotitrack.com</a>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <a href="tel:+51987654321">+51 987 654 321</a>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Lima, Perú</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>©2025 EmotiTrack. Cultivando tu bienestar emocional. Todos los derechos reservados.</p>
+        </div>
+    </div>
 </footer>
 
 <script src="./scripts/index.js"></script>
