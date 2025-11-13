@@ -1,17 +1,19 @@
-Característica: US44 - Recomendaciones diarias tipo "reto emocional"
-Como persona interesada en el bienestar, quiero recibir pequeños retos diarios,
-para promover hábitos positivos.
+Característica: US27 - Recordatorios adaptados al estado emocional
+Como usuario, quiero que los recordatorios cambien de mensaje según mis emociones recientes,
+para recibir apoyo emocional adecuado.
 
-Esquema del escenario: Generación y confirmación de reto diario
-Dadoque el usuario inicia sesión
-Cuando el sistema genera el reto del día
-Entonces aparece una tarjeta con la actividad sugerida
-Ysi el usuario marca el reto como realizado y lo confirma
-Entonces el sistema añade un punto extra en su progreso diario
+Esquema del escenario: Mensaje dinámico según emociones registradas
+Dado que el usuario ha registrado emociones recientes
+Cuando el sistema envía el recordatorio
+Entonces el mensaje se adapta al estado emocional
+Y si las emociones son tristes, el mensaje es motivador
+Y si las emociones son positivas, el mensaje refuerza bienestar
 
 Ejemplos:
-| Reto sugerido          | Acción del usuario | Resultado esperado                |
-|-------------------------|--------------------|-----------------------------------|
-| Respirar profundo 3 min| Completa          | +1 punto en progreso diario      |
-| Escribir algo positivo | Completa          | +1 punto en progreso diario      |
+| Emoción registrada | Mensaje esperado                      |
+|---------------------|--------------------------------------|
+| Triste             | "¡Ánimo! Hoy es un buen día para ti" |
+| Alegre             | "Sigue así, tu bienestar es prioridad"|
+
+
 
