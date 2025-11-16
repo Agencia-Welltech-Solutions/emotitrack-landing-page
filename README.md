@@ -21,4 +21,13 @@ El segundo segmento está formado por jóvenes que se encuentran en sus primeros
 <h2 style="font-size: 36px;">Segmento 3: Personas interesadas en el bienestar digital (18-40 años)</h2>  
 Nuestro tercer segmento objetivo está compuesto por personas de diferentes edades que buscan mejorar su bienestar emocional a través de herramientas tecnológicas. Este grupo ya está familiarizado con aplicaciones de fitness o de productividad. EmotiTrack les brinda una experiencia atractiva y personalizada que fortalece su autoconocimiento y fomenta hábitos de cuidado emocional.
 
+<h1 style="font-size: 36px;">Principales características ofrecidas</h1>
+La aplicación ofrece un conjunto de funcionalidades diferenciadoras frente a otras soluciones existentes en el mercado:
 
+- Registro diario rápido e intuitivo mediante emojis, texto o notas de voz, adaptándose a distintos estilos de usuario.
+
+- Gamificación para motivar la constancia, con logros, recompensas y retos que incentiven la continuidad del hábito.
+
+- Visualizaciones dinámicas que muestran patrones de ánimo y cambios emocionales de forma clara y atractiva.
+
+- Insights automáticos y recomendaciones personalizadas, que promueven el autoconocimiento y brindan consejos prácticos para mejorar el bienestar emocional.
