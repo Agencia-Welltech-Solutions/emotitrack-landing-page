@@ -11,3 +11,14 @@ El primer producto que desarrollamos es EmotiTrack, una aplicación multiplatafo
 + Gala Flores Angel Emilio - U202524081
 
 + Brian Alexis Cañiza Bolivar - U20211D898
+
+<h1 style="font-size: 36px;">Segmentos Objetivo</h1>
+
+<h2 style="font-size: 36px;">Segmento 1: Estudiantes universitarios (18-24 años)</h2> 
+Nuestro primer segmento objetivo está constituido por los estudiantes universitarios ya que ellos enfrentan altos niveles de estrés académico, presión por exámenes y proyectos, lo cual impacta en su bienestar emocional y en su rendimiento académico. EmotiTrack les ofrece una herramienta accesible y motivadora con la cual podrán registrar sus emociones y desarrollar hábitos de autogestión que los ayude a mantener el equilibrio.
+<h2 style="font-size: 36px;">Segmento 2: Jóvenes profesionales (24-30 años)</h2> 
+El segundo segmento está formado por jóvenes que se encuentran en sus primeros años de vida laboral ya que ellos enfrentan la sobrecarga de trabajo, plazos ajustados y riesgo de burnout (trabajador explotado), lo que afecta su productividad y calidad de vida. Con EmotiTrack  podrán gestionar mejor sus emociones mediante recordatorios inteligentes, gamificación y visualizaciones diarias que se integran fácilmente en su rutina diaria.
+<h2 style="font-size: 36px;">Segmento 3: Personas interesadas en el bienestar digital (18-40 años)</h2>  
+Nuestro tercer segmento objetivo está compuesto por personas de diferentes edades que buscan mejorar su bienestar emocional a través de herramientas tecnológicas. Este grupo ya está familiarizado con aplicaciones de fitness o de productividad. EmotiTrack les brinda una experiencia atractiva y personalizada que fortalece su autoconocimiento y fomenta hábitos de cuidado emocional.
+
+
