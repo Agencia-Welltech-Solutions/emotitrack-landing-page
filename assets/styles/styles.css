@@ -34,6 +34,21 @@ body {
     overflow-x: hidden;
 }
 
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
 .gradient-bg {
     position: fixed;
     top: 0;
@@ -528,6 +543,200 @@ nav {
     font-weight: 600;
     margin-bottom: 20px;
     border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.about-videos {
+    padding: 100px 0;
+    background: var(--bg);
+}
+
+.about-videos h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.about-videos-subtitle {
+    color: var(--text-light);
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+.videos-grid {
+    display: grid;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.video-card {
+    background: var(--white);
+    border-radius: 25px;
+    padding: 40px;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 165, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.video-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.video-card:hover::before {
+    transform: scaleX(1);
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(255, 165, 0, 0.15);
+}
+
+.video-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.video-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 184, 77, 0.2), rgba(255, 165, 0, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.video-card h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0;
+}
+
+.video-card > p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    border-radius: 15px;
+    overflow: hidden;
+    background: #f0f0f0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.video-card:hover .video-wrapper {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+    .about-videos {
+        padding: 80px 0;
+    }
+
+    .videos-grid {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-videos h2 {
+        font-size: 2.2rem;
+        padding: 0 10px;
+    }
+
+    .about-videos-subtitle {
+        font-size: 1.05rem;
+        padding: 0 15px;
+    }
+
+    .video-card {
+        padding: 30px 25px;
+        margin: 0 10px;
+    }
+
+    .video-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .video-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.8rem;
+    }
+
+    .video-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-videos h2 {
+        font-size: 1.9rem;
+        padding: 0 5px;
+    }
+
+    .about-videos-subtitle {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    .video-card {
+        padding: 25px 20px;
+        margin: 0 5px;
+    }
+
+    .video-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .video-card > p {
+        font-size: 0.95rem;
+    }
 }
 
 .benefits {
